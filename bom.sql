@@ -47,7 +47,7 @@ CREATE TABLE `bom` (
   PRIMARY KEY (`item`),
   KEY `item` (`item`),
   KEY `part` (`part`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -72,6 +72,9 @@ INSERT INTO `bom` VALUES (13,NULL,11,NULL,'5/16\"-18 x 4\" Long HCS',1,'each',NU
 INSERT INTO `bom` VALUES (14,NULL,12,NULL,'5/16\"-18 x 4\" Long HCS',1,'each',NULL,'McMaster-Carr','91247A599','McMaster-Carr','91247A599','http://www.mcmaster.com/#91247a599/=qhaix3',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2185b3d5fbee5674dda10ec534d60fa270b72462');
 INSERT INTO `bom` VALUES (15,NULL,11,NULL,'5/16\" washer, Zinc Plated',1,'each',NULL,'McMaster-Carr','90126A030','McMaster-Carr','90126A030','http://www.mcmaster.com/#90126a030/=qhak1y',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'ceda20d2924993b1d87e5e590056fe79df3ed276');
 INSERT INTO `bom` VALUES (16,NULL,12,NULL,'5/16\" washer, Zinc Plated',1,'each',NULL,'McMaster-Carr','90126A030','McMaster-Carr','90126A030','http://www.mcmaster.com/#90126a030/=qhak1y',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'5952f186810dd9dd42b8efc6410488377eec7b12');
+INSERT INTO `bom` VALUES (17,'BED08',NULL,NULL,'Cross Member Assy',2,'each',NULL,NULL,NULL,NULL,NULL,'https://www.dropbox.com/s/w8wvu13pi6tbu2r/CROSS%20MEMBER.PDF',NULL,NULL,NULL,NULL,NULL,NULL,1,'c37632964aad86cfbe0887f79b0cfaeb1a37ba0c');
+INSERT INTO `bom` VALUES (18,'BED09',17,NULL,'Cross Member',1,'each',NULL,NULL,NULL,NULL,NULL,'https://www.dropbox.com/s/r7szn9992zwyfau/CROSS.PDF',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'c9c87e2318f66cc7c21b93dd4721d3116c0636b8');
+INSERT INTO `bom` VALUES (19,NULL,17,NULL,' Tapping Insert for Wood, 5/16\"-18',1,'each',NULL,'McMaster-Carr','92105A415','McMaster-Carr','92105A415','http://www.mcmaster.com/#92105a415/=qhamju',NULL,NULL,NULL,NULL,NULL,NULL,0,'575d141b9529b0b9656b65b0ff9860ae23509413');
 /*!40000 ALTER TABLE `bom` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -84,4 +87,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-01-30 16:21:29
+-- Dump completed on 2014-01-30 16:27:09
